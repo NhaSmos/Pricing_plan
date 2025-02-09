@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+body{
+    background-color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 25px 80px;
+    box-sizing: border-box;
+    color: white;
+    
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+nav {
+    display: flex;
+}
+
+.pricing-section {
+    color: white; 
+    padding: 50px 20px; 
+}
+
+.pricing-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pricing-section p {
+    font-size: 18px;
+    max-width: 500px; 
+    margin: 0 auto;
+    text-align: center;
+    color:rgb(178, 178, 178);
+}
+.con-bill {
+    margin: 30px 0;
+}
+.billing-container{
+    display: flex;
+    justify-content: center; 
+    border: 1px solid #463e3e;
+    border-radius: 5px; 
+    overflow: hidden;
+    padding: 3px;
+    width: fit-content;
+    background-color: #2b2727;
+    margin: 0 auto; 
+}
+.billing-button{
+    padding: 10px 28px;
+    cursor: pointer;
+    color:rgb(178, 178, 178);
+    background-color: #2b2727;   
+    border: none;
+    border-radius: 8px;
+    font-size: 11px;
+
+}
+.billing-button.active {
+    background-color: #3c3c3c;
+    border: 1.5px solid #bc144f;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px 180px;
+    position: static;
+}
+.card {
+    background-color: #2b2727;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 60px 10px;
+    position: relative;
+    border: 1.5px solid transparent;;
+}
+.card#border {
+    border-color: #bc144f; 
+}
+#text{
+    font-size: 15px;
+    position: relative;
+    bottom: 11px;
+    left: 6px;
+    line-height: 1.5;
+    max-width: 250px;
+    word-wrap: break-word;
+    text-align: left;
+}
+.content h3 {
+    position: absolute;
+    top: 15px; 
+    left: 15px; 
+    margin-bottom: 0;
+}
+.subscribe{
+    background-color: #f7f2f4;
+    position: relative;
+    padding: 12px 87px;
+    align-items: center;
+    border-radius: 5px;
+    color: #070707;
+    border: #f7f2f4;
+    font-size: 15px;
+    top: 45px;
+    left: 5px;
+}
+.price {
+    font-size: 36px; 
+    position: relative;
+    font-weight: bold; 
+    display: flex;
+    align-items: baseline; 
+    top: 10px;
+    left: 5px;
+}
+
+.price span {
+    font-size: 16px; 
+    font-weight: normal;
+    vertical-align: baseline;
+}

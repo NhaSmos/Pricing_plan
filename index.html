@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <a>Pricing</a>
+        </div>
+        <nav>
+            <a>Sign In</a>
+        </nav>
+    </header>
+    <main>
+        <div class="pricing-section">
+            <h1>Pricing Plans</h1>
+            <p>Start building for free, then add a site plan to go live. 
+               Account plans unlock additional features.</p>
+            <section class="con-bill">
+                <div class="billing-container">
+                    <button class="billing-button">Monthly Billing</button>
+                    <button class="billing-button active">Yearly Billing</button>
+                </div>
+            </section>
+            <div class="card-container">
+                <div class="card">
+                    <div class="content">
+                        <h3 id="main">Hobby</h3>
+                        <p id="text">All the basics for starting a new business!</p>
+                        <div class="price">
+                            $100<span class="year">/year</span>
+                        </div>
+                        <button class="subscribe">Subscribe</button>
+                    </div>
+                </div>
+                <div class="card" id="border">
+                    <div class="content">
+                        <h3>Freelancer</h3>
+                        <p id="text">All the basics for starting a new business!</p>
+                        <div class="price">
+                            $200<span class="year">/year</span>
+                        </div>
+                        <button class="subscribe">Subscribe</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h3>Startup</h3>
+                        <p id="text">All the basics for starting a new business!</p>
+                        <div class="price">
+                            $300<span class="year">/year</span>
+                        </div>
+                        <button class="subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const buttons = document.querySelectorAll('.billing-button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
